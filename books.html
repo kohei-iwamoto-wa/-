@@ -4,12 +4,30 @@
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <form>
+    <header>
+      <p class="opening_message">気になる本を検索しよう!</p>
+      <form>
       <label for="textForm"></label>
-      <input type="text" id="textForm"placeholder="書籍・著者入力してください。"><br><br>
-      <button id="button -small -primary"class="button">検索</button>
+      <input type="text" size="40"id="textForm"placeholder="書籍・著者入力してください。"><br><br>
+      <button id="search"class="search_button">SEARCH</button>
     </form>
-    <div id="content"></div>
+    </header>
+  <div id="content"class="main_contents">
+   <!--  <p class="please_search">表示できるデータがありません。
+      <br>もう一度検索してみよう！</p> -->
+  </div>
+  <footer>
+    <p class="footer__follow_me">
+      Please Follow Me !
+    </p>
+    <div class="twitter_logo">
+      <a class="twitter-follow-button"
+        href="https://twitter.com/hSa1iGvSYBItp76"
+        data-size="large">
+      <img src="./Twitter_Logo_WhiteOnBlue.png"width="200" height="200">
+      </a>
+    </div>
+  </footer>
      <script type="text/javascript" src="./book.js"></script>
   </body>
   <script id="book_url"></script>
