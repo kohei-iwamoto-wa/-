@@ -10,12 +10,6 @@ function handleResponse(response) {
       scrollBy(0,80);
       }
     }
-// function scrollDown(response){
-//     }
-function removeDiv(response){
-    var message = document.getElementsByClassName('please_search');
-    message.parentNode.removeChild(please_search);
-  }
 
     var button = document.getElementById("search");
         button.addEventListener("click", function(e) {

@@ -39,8 +39,6 @@ header{
 form{
 	text-align: center;
 }
-
-
 .main_contents{
 	height:100vh;
 	width: 700px;
@@ -73,14 +71,10 @@ footer{
   position:relative;
 }
 .twitter_logo{
- /*position:absolute;
- left:300px;*/
  margin-left:auto;
  margin-right:auto;
  width: 200px;
  height: 200px;
-
-
 }
 .footer__follow_me{
   font-size:30px;
