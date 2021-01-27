@@ -25,11 +25,15 @@
      <script type="text/javascript" src="./scripts/book.js" async></script>
         <script type="application/javascript">
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker
-                .register('./serviceworker.js')
-                .then(function(){
-                    console.log('Service Worker Registered');
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('./serviceworker.js').then(function(sw) {
+                  // successful
+                  console.log('ServiceWorker scope: ', sw.scope);
+                }, function(err) {
+                  // failed
+                  console.log('ServiceWorker failed: ', err);
                 });
+              });
             }
         </script>
   </body>
