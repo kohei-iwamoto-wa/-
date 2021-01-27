@@ -3,6 +3,12 @@
     <title>書籍検索</title>
     <meta http-equiv="content-language" content="ja">
     <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width">
+    <link rel="shortcut icon" href="/images/book.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable"content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style"content="black">
+    <meta name="apple-mobile-web-app-title"content="PWA">
     <link rel="stylesheet" href="./styles/style.css" type="text/css">
   </head>
   <body>
@@ -18,7 +24,16 @@
    <!--  <p class="please_search">表示できるデータがありません。
       <br>もう一度検索してみよう！</p> -->
   </div>
-     <script type="text/javascript" src="./scripts/book.js"></script>
+     <script type="text/javascript" src="./scripts/book.js" async></script>
+        <script type="application/javascript">
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                .register('./serviceworker.js')
+                .then(function(){
+                    console.log('Service Worker Registered');
+                });
+            }
+        </script>
   </body>
   <script id="book_url"></script>
 </html>
