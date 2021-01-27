@@ -1,0 +1,15 @@
+
+{
+    "name": "Search for books application",
+    "short_name": "Search for books",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "start_url": "index.html",
+    "icons":[{
+        "src":"images/book.png",
+        "sizes":"512x512",
+        "type":"image/png"
+    }]
+  }
+  
