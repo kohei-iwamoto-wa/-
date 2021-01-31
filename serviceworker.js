@@ -1,11 +1,11 @@
 const cacheName = 'bookShell';
 
 const filesToCache = [
-    '/',
-    '/index.html',
-    '/scripts/book.js',
-    '/styles/style.css',
-    '/images/book.png'
+    '/BookSearchApp/',
+    '/BookSearchApp/index.html',
+    '/BookSearchApp/scripts/book.js',
+    '/BookSearchApp/styles/style.css',
+    '/BookSearchApp/images/book.png'
 ];
 
 self.addEventListener('install', function(event) {
