@@ -20,7 +20,7 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('active', function(event){
-    console.log('ServerWorker Active');
+    console.log('ServiceWorker Active');
     event.waitUntil(
         caches.keys()
             .then(function(keyList){
@@ -36,7 +36,7 @@ self.addEventListener('active', function(event){
 });
 
 self.addEventListener('fetch', function(event){
-    console.log('ServerWorker Fetch', event.request.url);
+    console.log('ServiceWorker Fetch', event.request.url);
     event.respondWith(
         caches.match(event.request)
         .then(function(response){
