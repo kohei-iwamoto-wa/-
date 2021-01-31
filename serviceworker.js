@@ -1,4 +1,4 @@
-const cacheName = 'converterShell';
+const cacheName = 'bookShell';
 
 const filesToCache = [
     '/',
