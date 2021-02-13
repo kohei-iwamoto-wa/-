@@ -4,8 +4,8 @@ const filesToCache = [
     '/',
     '/index.html',
     '/scripts/book.js',
-    '/scripts/book256.js',
-    '/scripts/book128.js',
+    '/images/book256.png',
+    '/images/book128.png',
     '/styles/style.css',
     '/images/book.png'
 ];
